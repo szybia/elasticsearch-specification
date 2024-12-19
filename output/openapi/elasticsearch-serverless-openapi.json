@@ -51424,20 +51424,10 @@
           },
           "routing_state": {
             "$ref": "#/components/schemas/ml._types:RoutingState"
-          },
-          "current_allocations": {
-            "description": "Current number of allocations.",
-            "type": "number"
-          },
-          "target_allocations": {
-            "description": "Target number of allocations.",
-            "type": "number"
           }
         },
         "required": [
-          "routing_state",
-          "current_allocations",
-          "target_allocations"
+          "routing_state"
         ]
       },
       "ml._types:RoutingState": {

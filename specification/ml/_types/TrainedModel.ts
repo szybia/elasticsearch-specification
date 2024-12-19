@@ -425,14 +425,6 @@ export class TrainedModelAssignmentRoutingTable {
    * The current routing state.
    */
   routing_state: RoutingState
-  /**
-   * Current number of allocations.
-   */
-  current_allocations: integer
-  /**
-   * Target number of allocations.
-   */
-  target_allocations: integer
 }
 
 export class TrainedModelDeploymentAllocationStatus {

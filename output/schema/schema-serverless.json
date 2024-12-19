@@ -134326,7 +134326,7 @@
           }
         }
       ],
-      "specLocation": "ml/_types/TrainedModel.ts#L474-L483"
+      "specLocation": "ml/_types/TrainedModel.ts#L466-L475"
     },
     {
       "kind": "interface",
@@ -134347,7 +134347,7 @@
           }
         }
       ],
-      "specLocation": "ml/_types/TrainedModel.ts#L466-L468"
+      "specLocation": "ml/_types/TrainedModel.ts#L458-L460"
     },
     {
       "kind": "interface",
@@ -134368,7 +134368,7 @@
           }
         }
       ],
-      "specLocation": "ml/_types/TrainedModel.ts#L470-L472"
+      "specLocation": "ml/_types/TrainedModel.ts#L462-L464"
     },
     {
       "kind": "interface",
@@ -134782,7 +134782,7 @@
           }
         }
       ],
-      "specLocation": "ml/_types/TrainedModel.ts#L438-L445"
+      "specLocation": "ml/_types/TrainedModel.ts#L430-L437"
     },
     {
       "kind": "interface",
@@ -135068,33 +135068,9 @@
               "namespace": "ml._types"
             }
           }
-        },
-        {
-          "description": "Current number of allocations.",
-          "name": "current_allocations",
-          "required": true,
-          "type": {
-            "kind": "instance_of",
-            "type": {
-              "name": "integer",
-              "namespace": "_types"
-            }
-          }
-        },
-        {
-          "description": "Target number of allocations.",
-          "name": "target_allocations",
-          "required": true,
-          "type": {
-            "kind": "instance_of",
-            "type": {
-              "name": "integer",
-              "namespace": "_types"
-            }
-          }
         }
       ],
-      "specLocation": "ml/_types/TrainedModel.ts#L418-L436"
+      "specLocation": "ml/_types/TrainedModel.ts#L418-L428"
     },
     {
       "kind": "interface",
@@ -137661,7 +137637,7 @@
           }
         }
       ],
-      "specLocation": "ml/_types/TrainedModel.ts#L447-L464"
+      "specLocation": "ml/_types/TrainedModel.ts#L439-L456"
     },
     {
       "kind": "interface",

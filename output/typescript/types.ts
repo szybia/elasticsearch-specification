@@ -14814,8 +14814,6 @@ export interface MlTrainedModelAssignment {
 export interface MlTrainedModelAssignmentRoutingTable {
   reason?: string
   routing_state: MlRoutingState
-  current_allocations: integer
-  target_allocations: integer
 }
 
 export interface MlTrainedModelAssignmentTaskParameters {
