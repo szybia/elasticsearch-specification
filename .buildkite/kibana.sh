@@ -21,6 +21,14 @@ echo "--- Clone Kibana"
 git clone -v --reference /usr/local/git-references/git-github-com-elastic-kibana-git -- git@github.com:elastic/kibana.git
 pushd kibana
 
+# Clone upgrade branch if it exists
+branch="renovate/main-@elasticelasticsearch"
+
+if git rev-parse --verify "$branch" >/dev/null 2>&1; then
+  echo "Branch $branch exists, checking it out."
+  git checkout "$branch"
+fi
+
 echo "--- Install Node.js and Yarn"
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash
 set +e # https://github.com/nvm-sh/nvm/issues/3117
