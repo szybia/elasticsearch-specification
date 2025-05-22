@@ -34,6 +34,7 @@ npm install --global yarn
 popd
 
 echo "--- Install elasticsearch-js"
+set -x
 pushd elasticsearch-js
 npm install
 node .buildkite/make.mjs --task codegen main
@@ -42,6 +43,10 @@ npm pack
 popd
 
 pushd kibana
+set +e
+yarn add ../elasticsearch-js/elastic-elasticsearch-*.tgz
+set -e
+node scripts/yarn_deduplicate
 yarn add ../elasticsearch-js/elastic-elasticsearch-*.tgz
 
 echo "--- Bootstrap Kibana"
